@@ -25,6 +25,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0 # needed for git restore-mtime to get head
+          lfs: true
 
       # Restore mtime in order for AWS S3 sync to grab diffs
       - name: Restore mtime
