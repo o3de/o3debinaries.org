@@ -1,0 +1,286 @@
+body
+{
+    background-color: #000;
+    font-family: "Open Sans";
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #1E252F;
+    min-width: 320px;
+
+    font-size: 16px;
+}
+
+a
+{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.btn
+{
+    line-height: 1.5;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 3px 7px;
+    font-size: 1.4em;
+    line-height: 1.5;
+    border-radius: 3px;
+    background: rgb(30,112,235);
+    background: linear-gradient(0deg, rgba(30,112,235,1) 0%, rgba(0,149,242,1) 100%);
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    background: #115ac5;
+}
+
+.btn-secondary
+{
+    background: rgb(0,133,37);
+    background: linear-gradient(0deg, rgba(0,133,37,1) 0%, rgba(0,166,46,1) 100%);
+}
+
+.btn-secondary:hover
+{
+    background: #005217;
+}
+
+.small-note
+{
+    font-size: .8em;
+}
+
+.additional-download-url
+{
+    display: inline-block;
+    color: #fff;
+    line-height: 3em;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.additional-download-url a
+{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Header */
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 72px;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-logo
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 18px;
+    line-height: 36px;
+}
+
+.navbar-logo img.logo
+{
+    float: left;
+    height: 36px;
+    width: auto;
+}
+
+.logo-subtitle
+{
+    display: block;
+    position: absolute;
+    line-height: 22px;
+    margin-top: -11px;
+    font-size: 22px;
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+}
+
+.navbar-os
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 16px;
+}
+
+.navbar-os .os-button
+{
+    display: inline-block;
+    height: 67px;
+    padding: 0 8px;
+    border-bottom: 5px solid #000;
+    line-height: 70px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-os .os-button:hover
+{
+    color: #94D2FF;
+}
+
+.navbar-os .os-button.current
+{
+    border-color: #1E70EB;
+    color: #1E70EB;
+}
+
+.container
+{
+    max-width: 1140px;
+    padding: 0 36px;
+    margin: 0 auto;
+}
+
+.content
+{
+    display: block;
+    margin-top: 72px;
+    width: 100%;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 2% 0;
+}
+
+.content .container
+{
+    margin: 12% auto;
+}
+
+.content h1
+{
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0 0 8px;
+}
+
+.content h3
+{
+    font-weight: 400;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.footer
+{
+    background-color: #1E252F;
+    padding: 2% 0;
+}
+
+.footer p
+{
+    margin: 1.5em 0;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: #94D2FF;
+}
+
+.footer p.footer-links a
+{
+    margin: 0 1.5em 0 0;
+}
+
+.footer-logo
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+}
+
+.footer-logo img.logo
+{
+    width: 180px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 980px)
+{
+    body
+    {
+        font-size: 12px;
+    }
+
+    .navbar
+    {
+        height: 54px;
+    }
+    
+    .navbar-logo
+    {
+        margin: 14px 8px;
+    }
+    
+    .navbar-logo img.logo
+    {
+        float: left;
+        height: 24px;
+        width: auto;
+    }
+    
+    .logo-subtitle
+    {
+        font-size: 16px;
+    }
+    
+    .navbar-os .os-button
+    {
+        height: 49px;
+        line-height: 52px;
+    }
+    
+    .content
+    {
+        margin-top: 54px;
+    }
+
+    .footer-logo img.logo
+    {
+        width: 120px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .additional-download-url
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .additional-download-url,
+    .btn
+    {
+        display: block;
+        text-align: center;
+    }
+}
