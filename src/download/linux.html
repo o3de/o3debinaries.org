@@ -28,16 +28,53 @@
         <div class="content">
             <div class="container">
                 <h1>Install Open 3D Engine for Linux</h1>
-                <h3>Thank you for downloading the O3DE Debian Package</h3>
+                <h3>Thank you for downloading O3DE for Linux</h3>
                 <p>By downloading these files, you agree to the <a href="../license.html" target="_blank">End User License Agreement</a>.</p>
+                <div class="tabs">
+                    <a href="#latest" class="tab tab-latest">Latest version</a>
+                    <a href="#older" class="tab tab-older">Older versions</a>
+                </div>
+                <div id="latest" class="tab-panel">
+                <h3>Debian/Ubuntu package</h3>
+                <p>
+                    <a href="https://o3debinaries.org/stabilization-26100/Latest/Linux/o3de_latest.deb" class="btn">Download v26.10.0 Release</a><span class="additional-download-url">Additional Downloads: <a href="https://o3debinaries.org/stabilization-26100/Latest/Linux/o3de_latest.deb.sha256">SHA256</a> <a href="https://o3debinaries.org/main/Latest/Linux/o3de-releases.gpg">GPG</a></span>
+                </p>
                 <br>
-                <h3>Latest version</h3>
+                <h3>Other distributions (.tar.gz)</h3>
+                <p>
+                    <a href="https://o3debinaries.org/stabilization-26100/Latest/Linux/o3de_linux_2610_0_x86_64.tar.gz" class="btn">Download v26.10.0 Release - .tar.gz</a><span class="additional-download-url">Additional Downloads: <a href="https://o3debinaries.org/stabilization-26100/Latest/Linux/o3de_linux_2610_0_x86_64.tar.gz.sha256">SHA256</a></span>
+                </p>
+                <p class="small-note">Works on any x86_64 distribution without installing. Extract the archive anywhere; the included README explains how to run O3DE and how to add desktop shortcuts.</p>
+                <p><a href="https://github.com/o3de/sig-release/blob/main/releases/26.10.0/26.10.0.md" target="_blank">Release notes for v26.10.0</a></p>
+                <br>
+                <h3 id="rpm">Fedora and CentOS Stream</h3>
+                <p>Community-maintained RPM packages of O3DE are available for Fedora and CentOS Stream (x86_64) from the <a href="https://copr.fedorainfracloud.org/coprs/hellaenergy/o3de/" target="_blank">hellaenergy/o3de</a> COPR repository. They are built by the <a href="https://github.com/nickschuetz/o3de-rpm" target="_blank">o3de-rpm</a> project, not by the O3DE release pipeline that produces the Debian package. See the <a href="https://github.com/nickschuetz/o3de-rpm/blob/main/docs/INSTALL.md" target="_blank">RPM install guide</a>, and report problems with the RPM packages in the <a href="https://github.com/nickschuetz/o3de-rpm/issues" target="_blank">o3de-rpm issue tracker</a>.</p>
+                <p>
+                    <a href="https://copr.fedorainfracloud.org/coprs/hellaenergy/o3de/" class="btn" target="_blank">Get RPM Packages</a><span class="additional-download-url"><a href="https://github.com/nickschuetz/o3de-rpm/blob/main/docs/INSTALL.md" target="_blank">Install guide</a></span>
+                </p>
+                <br>
+                <h3>Optional downloads</h3>
+                <p>
+                    <a href="https://o3debinaries.org/main/Latest/Linux/o3de_installer_2610_0-3rdParty-offline.tar.gz" class="btn">Download Linux 3rdParty - Offline</a>
+                </p>
+                <br>
+                <p class="note">
+                    Help us improve the upcoming release by reporting bugs in our <a href="https://github.com/o3de/o3de/issues">issue tracker</a>
+                </p>
+                <br>
+                <h3>Nightly development build</h3>
+                <p>Try out features and fixes currently in development.</p>
+                <p>
+                    <a href="https://o3debinaries.org/development/Latest/Linux/o3de_latest.deb" class="btn btn-secondary">Download Nightly Build</a><span class="additional-download-url">Additional Downloads: <a href="https://o3debinaries.org/development/Latest/Linux/o3de_latest.deb.sha256">SHA256</a> <a href="https://o3debinaries.org/main/Latest/Linux/o3de-releases.gpg">GPG</a></span>
+                </p>
+                <p class="small-note">Nightly builds are created automatically from the latest source code revisions in the O3DE development branch, which may contain untested features and possible bugs.</p>
+                </div>
+                <div id="older" class="tab-panel">
                 <p>
                     <a href="https://o3debinaries.org/main/Latest/Linux/o3de_2605_0.deb" class="btn">Download v26.05.0 Release</a><span class="additional-download-url">Additional Downloads: <a href="https://o3debinaries.org/main/Latest/Linux/o3de_2605_0.deb.sha256">SHA256</a> <a href="https://o3debinaries.org/main/Latest/Linux/o3de-releases.gpg">GPG</a></span>
                 </p>
                 <p><a href="https://github.com/o3de/sig-release/blob/main/releases/26.05.0/26.05.0.md" target="_blank">Release notes for v26.05.0</a></p>
                 <br>
-                <h3>Older versions</h3>
                 <p>
                     <a href="https://o3debinaries.org/main/Latest/Linux/o3de_2510_2.deb" class="btn">Download v25.10.2 Release</a><span class="additional-download-url">Additional Downloads: <a href="https://o3debinaries.org/main/Latest/Linux/o3de_2510_2.deb.sha256">SHA256</a> <a href="https://o3debinaries.org/main/Latest/Linux/o3de-releases.gpg">GPG</a></span>
                 </p>
@@ -52,20 +89,7 @@
                     <a href="https://o3debinaries.org/main/Latest/Linux/o3de_2510_0.deb" class="btn">Download v25.10.0 Release</a><span class="additional-download-url">Additional Downloads: <a href="https://o3debinaries.org/main/Latest/Linux/o3de_2510_0.deb.sha256">SHA256</a> <a href="https://o3debinaries.org/main/Latest/Linux/o3de-releases.gpg">GPG</a></span>
                 </p>
                 <p><a href="https://github.com/o3de/sig-release/blob/main/releases/25.10.0/25.10.0.md" target="_blank">Release notes for v25.10.0</a></p>
-                <br>
-                <p class="note">
-                    Help us improve the upcoming release by reporting bugs in our <a href="https://github.com/o3de/o3de/issues">issue tracker</a>
-                </p>
-                <br>
-                <h3>Optional downloads</h3>
-                <p>
-                    <a href="https://o3debinaries.org/main/Latest/Linux/o3de_installer_2605_0-3rdParty-offline.tar.gz" class="btn">Download Linux 3rdParty - Offline</a>
-                </p>
-                <br>
-                <p class="note">
-                  Try out features and fixes currently in development by downloading the Nightly Development Build: <a href="https://o3debinaries.org/development/Latest/Linux/o3de_latest.deb">Debian Package</a> (<a href="https://o3debinaries.org/development/Latest/Linux/o3de_latest.deb.sha256">SHA256</a> <a href="https://o3debinaries.org/main/Latest/Linux/o3de-releases.gpg">GPG</a>) 
-                  <br>Note: These nightly builds are created automatically from the latest source code revisions in the O3DE development branch, which may contain untested features and possible bugs.</br>
-                </p>
+                </div>
             </div>
         </div>
         <div class="footer">
