@@ -46,13 +46,14 @@ a
 
 .btn-secondary
 {
-    background: rgb(0,133,37);
-    background: linear-gradient(0deg, rgba(0,133,37,1) 0%, rgba(0,166,46,1) 100%);
+    background: rgba(0,0,0,.35);
+    border-color: #94D2FF;
+    color: #94D2FF;
 }
 
 .btn-secondary:hover
 {
-    background: #005217;
+    background: rgba(148,210,255,.15);
 }
 
 .small-note
