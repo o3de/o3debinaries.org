@@ -46,13 +46,14 @@ a
 
 .btn-secondary
 {
-    background: rgb(0,133,37);
-    background: linear-gradient(0deg, rgba(0,133,37,1) 0%, rgba(0,166,46,1) 100%);
+    background: rgba(0,0,0,.35);
+    border-color: #94D2FF;
+    color: #94D2FF;
 }
 
 .btn-secondary:hover
 {
-    background: #005217;
+    background: rgba(148,210,255,.15);
 }
 
 .small-note
@@ -159,15 +160,27 @@ a
     display: block;
     margin-top: 72px;
     width: 100%;
+    padding: 2% 0;
+}
+
+/* Background sized to the viewport, not the content, so it doesn't rescale with page height */
+.content::before
+{
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
     background-image: url('../images/background.png');
     background-size: cover;
     background-position: 50% 50%;
-    padding: 2% 0;
 }
 
 .content .container
 {
-    margin: 12% auto;
+    margin: 48px auto;
 }
 
 .content h1
@@ -204,6 +217,63 @@ a
 .footer p.footer-links a
 {
     margin: 0 1.5em 0 0;
+}
+
+/* Version tabs: the Latest panel shows by default, #older shows when targeted */
+
+.tabs
+{
+    margin: 1.5em 0;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.tabs .tab
+{
+    display: inline-block;
+    padding: 8px 12px;
+    margin-bottom: -1px;
+    border-bottom: 3px solid transparent;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabs .tab:hover
+{
+    color: #94D2FF;
+}
+
+.tabs .tab-latest,
+.content:has(#older:target) .tabs .tab-older
+{
+    border-color: #1E70EB;
+    color: #1E70EB;
+}
+
+.content:has(#older:target) .tabs .tab-latest
+{
+    border-color: transparent;
+    color: #fff;
+}
+
+.tab-panel
+{
+    scroll-margin-top: 160px;
+}
+
+#older
+{
+    display: none;
+}
+
+#older:target
+{
+    display: block;
+}
+
+.content:has(#older:target) #latest
+{
+    display: none;
 }
 
 .footer-logo
